@@ -15,6 +15,7 @@ import { getBaseUrl } from '@plone/volto/helpers';
 import { settings } from '~/config';
 
 import { getNavigation } from '@plone/volto/actions';
+import './dropdownmenu.css';
 
 const messages = defineMessages({
   closeMobileMenu: {
