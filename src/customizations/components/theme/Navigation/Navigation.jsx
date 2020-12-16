@@ -166,8 +166,8 @@ class Navigation extends Component {
           onClick={this.closeMobileMenu}
         >
           {this.props.items.map((item) => (
-            item.items.length >0
-            ?<Dropdown text={item.title} className="item" activeClassName="active">
+           item && item.items && item.items.length > 0
+           ?<Dropdown text={item.title} className="item" activeClassName="active">
               <Dropdown.Menu>
               {item.items.map((dropdownitem) => (
                   <NavLink
