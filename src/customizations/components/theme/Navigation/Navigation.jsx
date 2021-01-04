@@ -168,8 +168,8 @@ class Navigation extends Component {
         >
           {this.props.items.map((item) => (
            item && item.items && item.items.length > 0
-           ?<Dropdown text={item.title} className="item" activeClassName="active">
-              <Dropdown.Menu>
+           ?<Dropdown text={item.title} className="item">
+              <Dropdown.Menu key={item.url}>
               {item.items.map((dropdownitem) => (
                   <NavLink
                   to={dropdownitem.url === '' ? '/' : dropdownitem.url}
