@@ -166,42 +166,43 @@ class Navigation extends Component {
           }
           onClick={this.closeMobileMenu}
         >
-          {this.props.items.map((item) => (
-           item && item.items && item.items.length > 0
-           ?<Dropdown text={item.title} className="item">
-              <Dropdown.Menu key={item.url}>
-              {item.items.map((dropdownitem) => (
-                  <NavLink
-                  to={dropdownitem.url === '' ? '/' : dropdownitem.url}
-                  key={dropdownitem.url}
-                  className="item"
-                  activeClassName="active"
-                  exact={
-                    settings.isMultilingual
-                      ? dropdownitem.url === `/${lang}`
-                      : dropdownitem.url === ''
-                  }
-                >
-                  {dropdownitem.title}
-                </NavLink>
-              ))}
-              </Dropdown.Menu>
-            </Dropdown>
-            :
-            <NavLink
-              to={item.url === '' ? '/' : item.url}
-              key={item.url}
-              className="item"
-              activeClassName="active"
-              exact={
-                settings.isMultilingual
-                  ? item.url === `/${lang}`
-                  : item.url === ''
-              }
-            >
-              {item.title}
-            </NavLink>
-          ))}
+          {this.props.items.map((item) =>
+            item && item.items && item.items.length > 0 ? (
+              <Dropdown text={item.title} className="item" key={item.url}>
+                <Dropdown.Menu key={item.url}>
+                  {item.items.map((dropdownitem) => (
+                    <NavLink
+                      to={dropdownitem.url === '' ? '/' : dropdownitem.url}
+                      key={dropdownitem.url}
+                      className="item"
+                      activeClassName="active"
+                      exact={
+                        settings.isMultilingual
+                          ? dropdownitem.url === `/${lang}`
+                          : dropdownitem.url === ''
+                      }
+                    >
+                      {dropdownitem.title}
+                    </NavLink>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            ) : (
+              <NavLink
+                to={item.url === '' ? '/' : item.url}
+                key={item.url}
+                className="item"
+                activeClassName="active"
+                exact={
+                  settings.isMultilingual
+                    ? item.url === `/${lang}`
+                    : item.url === ''
+                }
+              >
+                {item.title}
+              </NavLink>
+            ),
+          )}
         </Menu>
       </nav>
     );
