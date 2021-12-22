@@ -1,0 +1,26 @@
+import React from 'react';
+import NavItem from '@plone/volto/components/theme/Navigation/NavItem';
+import { Dropdown } from 'semantic-ui-react';
+import './dropdownmenu.css';
+const NavItems = ({ items, lang }) => {
+  return (
+    <>
+
+      {items.map((item) =>
+            item && item.items && item.items.length > 0 ? (
+              <Dropdown text={item.title} className="item" key={item.url}>
+                <Dropdown.Menu key={item.url}>
+                  {item.items.map((dropdownitem) => (
+                    <NavItem item={dropdownitem} lang={lang} key={dropdownitem.url} />
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            ) : (
+              <NavItem item={item} lang={lang} key={item.url} />
+            ),
+          )}
+    </>
+  );
+};
+
+export default NavItems;
