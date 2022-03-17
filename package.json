@@ -1,6 +1,6 @@
 {
   "name": "@codesyntax/volto-dropdownmenu",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "volto-dropdownmenu: Volto add-on",
   "main": "src/index.js",
   "license": "MIT",
