@@ -9,5 +9,8 @@
     "volto",
     "plone",
     "react"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
