@@ -1,6 +1,6 @@
 {
   "name": "@codesyntax/volto-menu-customization",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Volto addon to customize the original menu in a dropdown style",
   "main": "src/index.js",
   "license": "MIT",
