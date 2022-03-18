@@ -10,6 +10,17 @@
     "plone",
     "react"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^14.12.5"
+  },
+  "bugs": {
+    "url": "https://github.com/codesyntax/volto-menu-customization/issues"
+  },
+  "homepage": "https://github.com/codesyntax/volto-menu-customization#readme",
+  "author": "Lur Ibargutxi <libargutxi@codesyntax.com>",
   "publishConfig": {
     "access": "public"
   }
