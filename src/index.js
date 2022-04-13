@@ -1,8 +1,8 @@
 const applyConfig = (config) => {
   config.settings = {
     ...config.settings,
-    navDepth: 2
-  }
+    navDepth: 2,
+  };
   return config;
 };
 
