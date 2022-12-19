@@ -8,9 +8,9 @@ yarn install @codesyntax/volto-menu-customization
 Add the addon to the `addons` section of your `package.json`.
 
 ````JSON
- "addons": [
-    "@codesyntax/volto-menu-customization"
-  ],
+"addons": [
+  "@codesyntax/volto-menu-customization"
+],
 ````
 
 # Demo
