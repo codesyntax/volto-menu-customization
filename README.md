@@ -12,3 +12,8 @@ Add the addon to the `addons` section of your `package.json`.
     "@codesyntax/volto-menu-customization"
   ],
 ````
+
+# Demo
+
+https://user-images.githubusercontent.com/26112509/208468663-78420a39-f9f2-4503-89a0-13c853178658.mov
+
