@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.4.0 (2024-03-31)
+
+### Internal
+
+- Modernize setup @erral [#13](https://github.com/codesyntax/menu-customization/pull/13)
+
 ## 0.3.0 (2023-01-26)
 
 ### Feature
