@@ -8,7 +8,6 @@ npm-debug.log*
 .DS_Store
 *.swp
 yarn-error.log
-yarn.lock
 package-lock.json
 
 node_modules
@@ -23,3 +22,4 @@ videos
 .env.test.local
 .env.production.local
 *~
+.yarn/cache
