@@ -24,8 +24,8 @@ YELLOW=`tput setaf 3`
 PLONE_VERSION=6
 VOLTO_VERSION=17.0.0
 
-ADDON_NAME='volto-maplibre-block'
-ADDON_PATH='volto-maplibre-block'
+ADDON_NAME='volto-menu-customization'
+ADDON_PATH='volto-menu-customization'
 COMPOSE_FILE=dockerfiles/docker-compose.yml
 ACCEPTANCE_COMPOSE=acceptance/docker-compose.yml
 CMD=CURRENT_DIR=${CURRENT_DIR} ADDON_NAME=${ADDON_NAME} ADDON_PATH=${ADDON_PATH} VOLTO_VERSION=${VOLTO_VERSION} PLONE_VERSION=${PLONE_VERSION} docker compose
@@ -144,7 +144,7 @@ debug-frontend:  ## Run bash in the Frontend container (for debug infrastructure
 
 .PHONY: pull-backend-image
 pull-backend-image:  ## Pulls and updates the backend image (for use it while developing)
-	docker pull ghcr.io/voltomaplibre-block:latest
+	docker pull ghcr.io/volto-menu-customization:latest
 
 .PHONY: release
 release:  ## Release a version of the add-on
