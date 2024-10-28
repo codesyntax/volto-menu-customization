@@ -5,12 +5,16 @@ This package provides a customization of Volto's default menu that adds a dropdo
 yarn install @codesyntax/volto-menu-customization
 ````
 
-Add the addon to the `addons` section of your `package.json`.
+Add the addon to the `addons` and the `dependencies` section of your `package.json`.
 
 ````JSON
 "addons": [
   "@codesyntax/volto-menu-customization"
 ],
+
+"dependencies": {
+      "@codesyntax/volto-menu-customization": "*",
+}
 ````
 
 # Demo
