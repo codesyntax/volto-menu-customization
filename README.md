@@ -13,7 +13,7 @@ Add the addon to the `addons` and the `dependencies` section of your `package.js
 ],
 
 "dependencies": {
-      "@codesyntax/volto-menu-customization": "*",
+  "@codesyntax/volto-menu-customization": "*",
 }
 ````
 
