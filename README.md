@@ -12,6 +12,11 @@ Add the addon to the `addons` and the `dependencies` section of your `package.js
   "@codesyntax/volto-menu-customization": "*",
 }
 ````
+Install new add-on and restart Volto:
+````JSON
+yarn install
+yarn start
+````
 
 # Demo
 
